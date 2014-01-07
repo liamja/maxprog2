@@ -7,7 +7,7 @@
 			"revision" : 4
 		}
 ,
-		"rect" : [ 0.0, 44.0, 825.0, 710.0 ],
+		"rect" : [ 0.0, 44.0, 878.0, 710.0 ],
 		"bgcolor" : [ 0.115088, 0.117138, 0.101324, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -28,6 +28,105 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"annotation" : "Gain",
+					"bgcolor" : [ 0.115088, 0.117138, 0.101324, 0.0 ],
+					"fgcolor" : [ 0.115088, 0.117138, 0.101324, 0.0 ],
+					"floatoutput" : 1,
+					"hint" : "Gain",
+					"id" : "obj-79",
+					"maxclass" : "dial",
+					"needlecolor" : [ 0.455591, 0.808569, 0.910521, 1.0 ],
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"outlinecolor" : [ 0.454902, 0.807843, 0.909804, 0.2 ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 600.0, 315.0, 32.0, 32.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 780.0, 315.0, 45.0, 45.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ 0.0 ],
+							"parameter_type" : 3,
+							"parameter_initial_enable" : 1,
+							"parameter_invisible" : 1,
+							"parameter_shortname" : "Gain",
+							"parameter_longname" : "lfo.gain"
+						}
+
+					}
+,
+					"size" : 1.0,
+					"varname" : "lfogain"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue Medium",
+					"fontsize" : 12.0,
+					"id" : "obj-78",
+					"items" : [ "Sine", ",", "Saw", ",", "Pulse", ",", "Triangle", ",", "Noise" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 495.0, 315.0, 100.0, 21.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "Rate (Hz)",
+					"bgcolor" : [ 0.115088, 0.117138, 0.101324, 0.0 ],
+					"fgcolor" : [ 0.115088, 0.117138, 0.101324, 0.0 ],
+					"floatoutput" : 1,
+					"hint" : "Rate (Hz)",
+					"id" : "obj-75",
+					"maxclass" : "dial",
+					"needlecolor" : [ 0.455591, 0.808569, 0.910521, 1.0 ],
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"outlinecolor" : [ 0.454902, 0.807843, 0.909804, 0.2 ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 451.0, 315.0, 32.0, 32.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 765.0, 300.0, 45.0, 45.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ 0.0 ],
+							"parameter_type" : 3,
+							"parameter_initial_enable" : 1,
+							"parameter_invisible" : 1,
+							"parameter_shortname" : "Spread",
+							"parameter_longname" : "delay.rate"
+						}
+
+					}
+,
+					"size" : 10.0,
+					"varname" : "lforate"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue Medium",
+					"fontsize" : 12.0,
+					"id" : "obj-74",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 451.0, 390.0, 60.0, 21.0 ],
+					"text" : "liamja.lfo"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Helvetica Neue Medium",
 					"fontsize" : 12.0,
@@ -1828,6 +1927,37 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-74", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-75", 0 ],
+					"watchpoint_flags" : 1,
+					"watchpoint_id" : 3
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-74", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-78", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-74", 2 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-79", 0 ],
+					"watchpoint_flags" : 1,
+					"watchpoint_id" : 7
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1856,9 +1986,11 @@
  ],
 		"parameters" : 		{
 			"obj-45" : [ "delay.time", "Time", 0 ],
+			"obj-75" : [ "delay.rate", "Spread", 0 ],
 			"obj-14" : [ "amp.sustain", "Sustain", 0 ],
-			"obj-57" : [ "Additive Partials", "Partials", 0 ],
+			"obj-79" : [ "lfo.gain", "Gain", 0 ],
 			"obj-70" : [ "delay.spread", "Spread", 0 ],
+			"obj-57" : [ "Additive Partials", "Partials", 0 ],
 			"obj-59" : [ "delay.wet", "Wet", 0 ],
 			"obj-11" : [ "master.gain", "Gain", 0 ],
 			"obj-18" : [ "amp.decay", "Decay", 0 ],
@@ -1899,6 +2031,13 @@
 			}
 , 			{
 				"name" : "liamja.fx.delay.maxpat",
+				"bootpath" : "/Users/liamja/Dropbox/Uni/Year 3/Max/Synthesiser Patch",
+				"patcherrelativepath" : "",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "liamja.lfo.maxpat",
 				"bootpath" : "/Users/liamja/Dropbox/Uni/Year 3/Max/Synthesiser Patch",
 				"patcherrelativepath" : "",
 				"type" : "JSON",

@@ -7,7 +7,7 @@
 			"revision" : 4
 		}
 ,
-		"rect" : [ 0.0, 44.0, 863.0, 710.0 ],
+		"rect" : [ 0.0, 44.0, 672.0, 710.0 ],
 		"bgcolor" : [ 0.115088, 0.117138, 0.101324, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -28,6 +28,20 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue Medium",
+					"fontsize" : 12.0,
+					"id" : "obj-31",
+					"maxclass" : "newobj",
+					"numinlets" : 4,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 135.0, 190.0, 59.5, 21.0 ],
+					"text" : "pak f f f f"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Helvetica Neue Medium",
 					"fontsize" : 12.0,
@@ -1455,7 +1469,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 395.0, 15.0, 36.0, 19.0 ],
+					"patching_rect" : [ 178.700012, 75.0, 36.0, 19.0 ],
 					"text" : "flush"
 				}
 
@@ -1464,6 +1478,7 @@
 				"box" : 				{
 					"id" : "obj-40",
 					"maxclass" : "kslider",
+					"mode" : 1,
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
@@ -1858,7 +1873,7 @@
 
 					}
 ,
-					"setfilter" : [ 0, 4, 1, 0, 0, 219.800003, 1.15475, 4.601672, 0.0, 0.0, 0.1, 6.0, 0.1, 6.0 ],
+					"setfilter" : [ 0, 1, 1, 0, 0, 219.800003, 0.551063, 1.0, 0.0, 0.0, 0.1, 6.0, 0.1, 6.0 ],
 					"textcolor" : [ 0.455591, 0.808569, 0.910521, 1.0 ],
 					"varname" : "filtergraph~"
 				}
@@ -1971,7 +1986,7 @@
 
 					}
 ,
-					"size" : 1000.0,
+					"size" : 100.0,
 					"varname" : "am"
 				}
 
@@ -2048,8 +2063,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.0, 75.0, 32.5, 21.0 ],
-					"text" : "pak"
+					"patching_rect" : [ 15.0, 90.0, 38.0, 21.0 ],
+					"text" : "pack"
 				}
 
 			}
@@ -2111,7 +2126,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 135.0, 105.0, 68.0, 19.0 ],
+					"patching_rect" : [ 135.0, 106.0, 68.0, 19.0 ],
 					"text" : "allnotesoff"
 				}
 
@@ -2290,11 +2305,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-16",
 					"maxclass" : "newobj",
-					"numinlets" : 7,
+					"numinlets" : 4,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 15.0, 214.0, 151.0, 21.0 ],
-					"text" : "poly~ liamja.synth.main 1"
+					"patching_rect" : [ 15.0, 236.0, 107.0, 21.0 ],
+					"text" : "liamja.synth.main"
 				}
 
 			}
@@ -2606,9 +2621,7 @@
 					"destination" : [ "obj-95", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-11", 0 ],
-					"watchpoint_flags" : 1,
-					"watchpoint_id" : 4
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -2785,7 +2798,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 3 ],
+					"destination" : [ "obj-31", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-14", 0 ]
@@ -2806,9 +2819,7 @@
 					"destination" : [ "obj-130", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-142", 0 ],
-					"watchpoint_flags" : 1,
-					"watchpoint_id" : 3
+					"source" : [ "obj-142", 0 ]
 				}
 
 			}
@@ -2886,7 +2897,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 4 ],
+					"destination" : [ "obj-31", 3 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-15", 0 ]
@@ -2958,7 +2969,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 1 ],
+					"destination" : [ "obj-31", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-17", 0 ]
@@ -2967,7 +2978,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 2 ],
+					"destination" : [ "obj-31", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-18", 0 ]
@@ -2976,7 +2987,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 5 ],
+					"destination" : [ "obj-16", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-19", 0 ]
@@ -3016,6 +3027,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 3 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-31", 0 ]
 				}
 
 			}
@@ -3156,7 +3176,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 6 ],
+					"destination" : [ "obj-16", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-57", 0 ]
@@ -3453,28 +3473,28 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-107" : [ "umenu[1]", "umenu", 0 ],
-			"obj-45" : [ "delay.time", "Time", 0 ],
-			"obj-89" : [ "umenu", "umenu", 0 ],
 			"obj-112" : [ "umenu[3]", "umenu", 0 ],
-			"obj-75" : [ "delay.rate", "Spread", 0 ],
-			"obj-14" : [ "amp.sustain", "Sustain", 0 ],
-			"obj-79" : [ "lfo.gain", "Gain", 0 ],
-			"obj-70" : [ "delay.spread", "Spread", 0 ],
-			"obj-57" : [ "Additive Partials", "Partials", 0 ],
-			"obj-59" : [ "delay.wet", "Wet", 0 ],
 			"obj-119" : [ "umenu[5]", "umenu[2]", 0 ],
-			"obj-11" : [ "master.gain", "Gain", 0 ],
-			"obj-18" : [ "amp.decay", "Decay", 0 ],
-			"obj-61" : [ "delay.fb", "Feedback", 0 ],
-			"obj-118" : [ "lfo.gain[1]", "Gain", 0 ],
-			"obj-17" : [ "amp.attack", "Attack", 0 ],
-			"obj-113" : [ "umenu[4]", "umenu", 0 ],
-			"obj-19" : [ "synth.am", "Amplitude Modulation (Hz)", 0 ],
-			"obj-120" : [ "lfo.rate[1]", "Spread", 0 ],
-			"obj-78" : [ "umenu[2]", "umenu[2]", 0 ],
 			"obj-37" : [ "filtergraph~", "filtergraph~", 2 ],
-			"obj-15" : [ "amp.release", "Release", 0 ]
+			"obj-19" : [ "synth.am", "Amplitude Modulation (Hz)", 0 ],
+			"obj-59" : [ "delay.wet", "Wet", 0 ],
+			"obj-113" : [ "umenu[4]", "umenu", 0 ],
+			"obj-14" : [ "amp.sustain", "Sustain", 0 ],
+			"obj-75" : [ "delay.rate", "Spread", 0 ],
+			"obj-89" : [ "umenu", "umenu", 0 ],
+			"obj-107" : [ "umenu[1]", "umenu", 0 ],
+			"obj-79" : [ "lfo.gain", "Gain", 0 ],
+			"obj-18" : [ "amp.decay", "Decay", 0 ],
+			"obj-45" : [ "delay.time", "Time", 0 ],
+			"obj-118" : [ "lfo.gain[1]", "Gain", 0 ],
+			"obj-11" : [ "master.gain", "Gain", 0 ],
+			"obj-78" : [ "umenu[2]", "umenu[2]", 0 ],
+			"obj-70" : [ "delay.spread", "Spread", 0 ],
+			"obj-17" : [ "amp.attack", "Attack", 0 ],
+			"obj-57" : [ "Additive Partials", "Partials", 0 ],
+			"obj-120" : [ "lfo.rate[1]", "Spread", 0 ],
+			"obj-15" : [ "amp.release", "Release", 0 ],
+			"obj-61" : [ "delay.fb", "Feedback", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

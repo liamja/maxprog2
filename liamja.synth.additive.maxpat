@@ -7,7 +7,7 @@
 			"revision" : 4
 		}
 ,
-		"rect" : [ 253.0, 54.0, 448.0, 433.0 ],
+		"rect" : [ 571.0, 152.0, 448.0, 433.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -235,7 +235,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
-					"disabled" : 1,
+					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -255,9 +255,7 @@
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-12", 0 ],
-					"watchpoint_flags" : 1,
-					"watchpoint_id" : 18
+					"source" : [ "obj-12", 0 ]
 				}
 
 			}
@@ -284,9 +282,7 @@
 					"destination" : [ "obj-12", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-4", 0 ],
-					"watchpoint_flags" : 1,
-					"watchpoint_id" : 1
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -313,9 +309,7 @@
 					"destination" : [ "obj-19", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-7", 0 ],
-					"watchpoint_flags" : 1,
-					"watchpoint_id" : 20
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}

@@ -10,7 +10,7 @@
 		"rect" : [ 0.0, 44.0, 878.0, 736.0 ],
 		"bgcolor" : [ 0.115088, 0.117138, 0.101324, 1.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 1,
+		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Helvetica Neue Medium",
@@ -29,6 +29,21 @@
 		"tags" : "",
 		"title" : "Zwei",
 		"boxes" : [ 			{
+				"box" : 				{
+					"floatoutput" : 1,
+					"id" : "obj-87",
+					"listmode" : 1,
+					"maxclass" : "rslider",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 367.0, 90.0, 171.5, 31.5 ],
+					"size" : 500.0
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 10.0,
@@ -615,10 +630,10 @@
 					"presentation_rect" : [ 465.0, 389.0, 66.0, 19.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "umenu[3]",
 							"parameter_type" : 3,
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "umenu",
-							"parameter_longname" : "umenu[3]"
+							"parameter_shortname" : "umenu"
 						}
 
 					}
@@ -646,10 +661,10 @@
 					"presentation_rect" : [ 465.0, 366.0, 66.0, 19.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "umenu[4]",
 							"parameter_type" : 3,
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "umenu",
-							"parameter_longname" : "umenu[4]"
+							"parameter_shortname" : "umenu"
 						}
 
 					}
@@ -749,12 +764,12 @@
 					"presentation_rect" : [ 352.0, 366.0, 45.0, 45.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "lfo.gain[1]",
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "Gain",
-							"parameter_longname" : "lfo.gain[1]"
+							"parameter_shortname" : "Gain"
 						}
 
 					}
@@ -782,10 +797,10 @@
 					"presentation_rect" : [ 405.0, 389.0, 52.5, 19.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "umenu[5]",
 							"parameter_type" : 3,
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "umenu[2]",
-							"parameter_longname" : "umenu[5]"
+							"parameter_shortname" : "umenu[2]"
 						}
 
 					}
@@ -815,12 +830,12 @@
 					"presentation_rect" : [ 300.0, 366.0, 45.0, 45.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "lfo.rate[1]",
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "Spread",
-							"parameter_longname" : "lfo.rate[1]"
+							"parameter_shortname" : "Spread"
 						}
 
 					}
@@ -921,10 +936,10 @@
 					"presentation_rect" : [ 195.0, 389.0, 66.0, 19.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "umenu[1]",
 							"parameter_type" : 3,
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "umenu",
-							"parameter_longname" : "umenu[1]"
+							"parameter_shortname" : "umenu"
 						}
 
 					}
@@ -1137,10 +1152,10 @@
 					"presentation_rect" : [ 195.0, 366.0, 66.0, 19.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "umenu",
 							"parameter_type" : 3,
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "umenu",
-							"parameter_longname" : "umenu"
+							"parameter_shortname" : "umenu"
 						}
 
 					}
@@ -1253,12 +1268,12 @@
 					"presentation_rect" : [ 82.0, 366.0, 45.0, 45.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "lfo.gain",
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "Gain",
-							"parameter_longname" : "lfo.gain"
+							"parameter_shortname" : "Gain"
 						}
 
 					}
@@ -1286,10 +1301,10 @@
 					"presentation_rect" : [ 135.0, 389.0, 52.5, 19.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "umenu[2]",
 							"parameter_type" : 3,
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "umenu[2]",
-							"parameter_longname" : "umenu[2]"
+							"parameter_shortname" : "umenu[2]"
 						}
 
 					}
@@ -1319,12 +1334,12 @@
 					"presentation_rect" : [ 30.0, 366.0, 45.0, 45.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "delay.rate",
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "Spread",
-							"parameter_longname" : "delay.rate"
+							"parameter_shortname" : "Spread"
 						}
 
 					}
@@ -1412,12 +1427,12 @@
 					"presentation_rect" : [ 750.0, 366.0, 45.0, 45.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "delay.spread",
 							"parameter_initial" : [ 0 ],
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "Spread",
-							"parameter_longname" : "delay.spread"
+							"parameter_shortname" : "Spread"
 						}
 
 					}
@@ -1447,12 +1462,12 @@
 					"presentation_rect" : [ 570.0, 366.0, 45.0, 45.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "delay.wet",
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "Wet",
-							"parameter_longname" : "delay.wet"
+							"parameter_shortname" : "Wet"
 						}
 
 					}
@@ -1502,12 +1517,12 @@
 					"presentation_rect" : [ 30.0, 165.0, 225.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "Additive Partials",
 							"parameter_initial" : [ 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "Partials",
-							"parameter_longname" : "Additive Partials"
+							"parameter_shortname" : "Partials"
 						}
 
 					}
@@ -1735,12 +1750,12 @@
 					"presentation_rect" : [ 690.0, 366.0, 45.0, 45.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "delay.fb",
 							"parameter_initial" : [ 0.2 ],
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "Feedback",
-							"parameter_longname" : "delay.fb"
+							"parameter_shortname" : "Feedback"
 						}
 
 					}
@@ -1916,12 +1931,12 @@
 					"presentation_rect" : [ 630.0, 366.0, 45.0, 45.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "delay.time",
 							"parameter_initial" : [ 10.0 ],
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "Time",
-							"parameter_longname" : "delay.time"
+							"parameter_shortname" : "Time"
 						}
 
 					}
@@ -2003,18 +2018,18 @@
 					"range" : [ 0.0625, 8.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "filtergraph~",
+							"parameter_order" : 2,
 							"parameter_initial" : [ 1, 0, 1, 1, 0, 0, 1000.0, 1.0, 1.0 ],
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "filtergraph~",
-							"parameter_longname" : "filtergraph~",
-							"parameter_order" : 2
+							"parameter_shortname" : "filtergraph~"
 						}
 
 					}
 ,
-					"setfilter" : [ 0, 1, 1, 0, 0, 418.0, 1.0, 1.0, 0.0, 0.0, 0.1, 6.0, 0.1, 6.0 ],
+					"setfilter" : [ 0, 9, 1, 0, 0, 418.0, 1.103049, 1.0, 0.0, 0.0, 0.1, 6.0, 0.1, 6.0 ],
 					"textcolor" : [ 0.455591, 0.808569, 0.910521, 1.0 ],
 					"varname" : "filtergraph~"
 				}
@@ -2117,12 +2132,12 @@
 					"presentation_rect" : [ 30.0, 45.0, 45.0, 45.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "synth.am",
 							"parameter_initial" : [ 1 ],
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "Amplitude Modulation (Hz)",
-							"parameter_longname" : "synth.am"
+							"parameter_shortname" : "Amplitude Modulation (Hz)"
 						}
 
 					}
@@ -2243,12 +2258,12 @@
 					"presentation_rect" : [ 570.0, 45.0, 45.0, 45.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "master.gain",
 							"parameter_initial" : [ 0.0 ],
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "Gain",
-							"parameter_longname" : "master.gain"
+							"parameter_shortname" : "Gain"
 						}
 
 					}
@@ -2292,12 +2307,12 @@
 					"presentation_rect" : [ 360.0, 45.0, 45.0, 45.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "amp.decay",
 							"parameter_initial" : [ 150 ],
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "Decay",
-							"parameter_longname" : "amp.decay"
+							"parameter_shortname" : "Decay"
 						}
 
 					}
@@ -2327,12 +2342,12 @@
 					"presentation_rect" : [ 300.0, 45.0, 45.0, 45.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "amp.attack",
 							"parameter_initial" : [ 1 ],
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "Attack",
-							"parameter_longname" : "amp.attack"
+							"parameter_shortname" : "Attack"
 						}
 
 					}
@@ -2362,12 +2377,12 @@
 					"presentation_rect" : [ 480.0, 45.0, 45.0, 45.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "amp.release",
 							"parameter_initial" : [ 10 ],
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "Release",
-							"parameter_longname" : "amp.release"
+							"parameter_shortname" : "Release"
 						}
 
 					}
@@ -2397,12 +2412,12 @@
 					"presentation_rect" : [ 420.0, 45.0, 45.0, 45.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "amp.sustain",
 							"parameter_initial" : [ 0.2 ],
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "Sustain",
-							"parameter_longname" : "amp.sustain"
+							"parameter_shortname" : "Sustain"
 						}
 
 					}
@@ -2446,7 +2461,7 @@
 					"fontsize" : 12.0,
 					"id" : "obj-16",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
+					"numinlets" : 5,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 15.0, 311.0, 107.0, 21.0 ],
@@ -3597,6 +3612,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-16", 4 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-87", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-92", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -3687,68 +3711,75 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-19" : [ "synth.am", "Amplitude Modulation (Hz)", 0 ],
+			"obj-113" : [ "umenu[4]", "umenu", 0 ],
+			"obj-89" : [ "umenu", "umenu", 0 ],
 			"obj-120" : [ "lfo.rate[1]", "Spread", 0 ],
-			"obj-15" : [ "amp.release", "Release", 0 ],
+			"obj-70" : [ "delay.spread", "Spread", 0 ],
+			"obj-18" : [ "amp.decay", "Decay", 0 ],
 			"obj-119" : [ "umenu[5]", "umenu[2]", 0 ],
 			"obj-61" : [ "delay.fb", "Feedback", 0 ],
-			"obj-79" : [ "lfo.gain", "Gain", 0 ],
-			"obj-45" : [ "delay.time", "Time", 0 ],
 			"obj-11" : [ "master.gain", "Gain", 0 ],
-			"obj-37" : [ "filtergraph~", "filtergraph~", 2 ],
-			"obj-14" : [ "amp.sustain", "Sustain", 0 ],
-			"obj-70" : [ "delay.spread", "Spread", 0 ],
-			"obj-89" : [ "umenu", "umenu", 0 ],
-			"obj-113" : [ "umenu[4]", "umenu", 0 ],
-			"obj-57" : [ "Additive Partials", "Partials", 0 ],
+			"obj-17" : [ "amp.attack", "Attack", 0 ],
+			"obj-19" : [ "synth.am", "Amplitude Modulation (Hz)", 0 ],
 			"obj-107" : [ "umenu[1]", "umenu", 0 ],
-			"obj-18" : [ "amp.decay", "Decay", 0 ],
-			"obj-118" : [ "lfo.gain[1]", "Gain", 0 ],
-			"obj-78" : [ "umenu[2]", "umenu[2]", 0 ],
+			"obj-59" : [ "delay.wet", "Wet", 0 ],
+			"obj-57" : [ "Additive Partials", "Partials", 0 ],
+			"obj-15" : [ "amp.release", "Release", 0 ],
 			"obj-75" : [ "delay.rate", "Spread", 0 ],
 			"obj-112" : [ "umenu[3]", "umenu", 0 ],
-			"obj-59" : [ "delay.wet", "Wet", 0 ],
-			"obj-17" : [ "amp.attack", "Attack", 0 ]
+			"obj-37" : [ "filtergraph~", "filtergraph~", 2 ],
+			"obj-45" : [ "delay.time", "Time", 0 ],
+			"obj-118" : [ "lfo.gain[1]", "Gain", 0 ],
+			"obj-79" : [ "lfo.gain", "Gain", 0 ],
+			"obj-14" : [ "amp.sustain", "Sustain", 0 ],
+			"obj-78" : [ "umenu[2]", "umenu[2]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "liamja.synth.main.maxpat",
-				"bootpath" : "/Users/liamja/Dropbox/Uni/Year 3/Max/Synthesiser Patch",
+				"bootpath" : "/Users/liamja/Dropbox/Uni/Year 3/Max/Task 2",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "liamja.synth.additive.maxpat",
-				"bootpath" : "/Users/liamja/Dropbox/Uni/Year 3/Max/Synthesiser Patch",
+				"bootpath" : "/Users/liamja/Dropbox/Uni/Year 3/Max/Task 2",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "liamja.synth.additive.period.maxpat",
-				"bootpath" : "/Users/liamja/Dropbox/Uni/Year 3/Max/Synthesiser Patch",
+				"bootpath" : "/Users/liamja/Dropbox/Uni/Year 3/Max/Task 2",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "liamja.synth.am.maxpat",
-				"bootpath" : "/Users/liamja/Dropbox/Uni/Year 3/Max/Synthesiser Patch",
+				"bootpath" : "/Users/liamja/Dropbox/Uni/Year 3/Max/Task 2",
+				"patcherrelativepath" : "",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "liamja.synth.granular.maxpat",
+				"bootpath" : "/Users/liamja/Dropbox/Uni/Year 3/Max/Task 2",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "liamja.fx.delay.maxpat",
-				"bootpath" : "/Users/liamja/Dropbox/Uni/Year 3/Max/Synthesiser Patch",
+				"bootpath" : "/Users/liamja/Dropbox/Uni/Year 3/Max/Task 2",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "liamja.lfo.maxpat",
-				"bootpath" : "/Users/liamja/Dropbox/Uni/Year 3/Max/Synthesiser Patch",
+				"bootpath" : "/Users/liamja/Dropbox/Uni/Year 3/Max/Task 2",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
